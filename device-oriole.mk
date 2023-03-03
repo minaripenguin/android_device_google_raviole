@@ -158,6 +158,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.display.lbe.supported=1
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.set_idle_timer_ms=1500
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.latch_unsignaled=0
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.auto_latch_unsignaled=0
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.predict_hwc_composition_strategy=0
 
 # Fs-verity
 PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2

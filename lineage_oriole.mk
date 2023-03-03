@@ -16,8 +16,10 @@ include device/google/raviole/oriole/device-lineage.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
+PRODUCT_DEVICE := oriole
 PRODUCT_MODEL := Pixel 6
 PRODUCT_NAME := lineage_oriole
+PRODUCT_MANUFACTURER := Google
 
 # GMS
 WITH_GMS := true

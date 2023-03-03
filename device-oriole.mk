@@ -159,6 +159,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.set_idle_timer_ms=1500
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.latch_unsignaled=0
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.auto_latch_unsignaled=0
 
+# Fs-verity
+PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2
+
 # Media Performance Class 12
 PRODUCT_PROPERTY_OVERRIDES += ro.odm.build.media_performance_class=31
 

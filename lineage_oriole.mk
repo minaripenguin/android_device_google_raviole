@@ -19,17 +19,25 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6
 PRODUCT_NAME := lineage_oriole
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+# GMS
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_CORE_GMS_EXTRAS := true
+
+# Sushi Boot Animation
+SUSHI_BOOTANIMATION  := 1080
+
+# Rice
+RICE_MAINTAINER := minaripenguin
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := false
+TARGET_HAS_UDFPS := true
+TARGET_USE_PIXEL_FINGERPRINT := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=oriole \
     PRIVATE_BUILD_DESC="oriole-user 13 TQ1A.230205.002 9471150 release-keys"
 
 BUILD_FINGERPRINT := google/oriole/oriole:13/TQ1A.230205.002/9471150:user/release-keys
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=oriole
 
 $(call inherit-product, vendor/google/oriole/oriole-vendor.mk)

@@ -150,6 +150,10 @@ PRODUCT_SOONG_NAMESPACES += \
     device/google/raviole/powerstats/oriole \
     device/google/raviole
 
+# Cached Processes Limit
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.fw.bg_apps_limit=64
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.fw.bg_phantom_proc_limit=64
+
 # Display
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.display.lbe.supported=1
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.set_idle_timer_ms=1500

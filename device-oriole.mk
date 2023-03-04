@@ -160,6 +160,20 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += debug.sf.predict_hwc_composition_strategy=
 # Fs-verity
 PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2
 
+# LMKD
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.lmkd.enable_watermark_check=true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.lmkd.enable_userspace_lmk=true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.lmkd.enhance_batch_kill=false
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.lmkd.super_critical=701
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.lmkd.psi_scrit_complete_stall_ms=150
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.lmkd.direct_reclaim_pressure=45
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.lmkd.reclaim_scan_threshold=0
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.kill_heaviest_task=true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.use_new_strategy=true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.filecache_min_kb=153600
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.kill_timeout_ms=50
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.stall_limit_critical=40
+
 # Media Performance Class 12
 PRODUCT_PROPERTY_OVERRIDES += ro.odm.build.media_performance_class=31
 

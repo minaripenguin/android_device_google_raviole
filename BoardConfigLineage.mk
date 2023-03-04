@@ -5,3 +5,6 @@
 #
 
 BUILD_BROKEN_DUP_RULES := true
+DEVICE_PATH := device/google/raviole
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oriole

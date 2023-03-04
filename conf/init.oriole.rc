@@ -30,6 +30,3 @@ on late-init && property:ro.boot.hardware.revision=EVT1.0
 # it should be written by the system init.
 on property:ro.boot.hardware.sku=GR1YH
     setprop audio.camerasound.force true
-
-on init
-    setprop ro.rice.chipset "Google Tensor"

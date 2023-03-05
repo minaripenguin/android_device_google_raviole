@@ -149,6 +149,10 @@ ACTUATOR_MODEL := luxshare_ict_081545
 PRODUCT_SOONG_NAMESPACES += \
     device/google/raviole/powerstats/oriole \
     device/google/raviole
+   
+# Expose AUX to Google Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.aux.camera_oem_package=com.google.android.GoogleCamera
 
 # Cached Processes Limit
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.fw.bg_apps_limit=64

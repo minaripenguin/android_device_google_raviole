@@ -7,6 +7,9 @@
 BUILD_BROKEN_DUP_RULES := true
 DEVICE_PATH := device/google/raviole
 
+# Camera
+MALLOC_SVELTE_FOR_LIBC32 := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oriole
 

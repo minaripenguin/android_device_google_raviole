@@ -87,5 +87,8 @@
     <!-- Burn-in protection -->
     <bool name="config_statusBarBurnInProtection">true</bool>
     <integer name="config_shift_interval">40</integer>
+
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">3</integer>
 </resources>
 

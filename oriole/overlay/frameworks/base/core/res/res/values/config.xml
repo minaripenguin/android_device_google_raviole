@@ -327,4 +327,10 @@
          Note: This should be only enabled on devices with high confidence on power measurement.
     -->
     <bool name="config_bg_current_drain_auto_restrict_abusive_apps">true</bool>
+    
+    <!-- Smart charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
+    <integer name="config_smartChargingBatteryLevel">80</integer>
+    <integer name="config_smartChargingBatteryResumeLevel">79</integer>
+    <string name="config_smartChargingSysfsNode" translatable="false">/sys/devices/platform/google,charger/</string>
 </resources>

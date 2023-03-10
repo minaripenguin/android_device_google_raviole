@@ -2,6 +2,9 @@
 import /vendor/etc/init/hw/init.gs101.rc
 import /vendor/etc/init/hw/init.raviole.rc
 
+on post-fs-data
+    chown system system /sys/devices/platform/google,charger/
+    
 on init
     # logbuffer
     chown system system /dev/logbuffer_5-0057

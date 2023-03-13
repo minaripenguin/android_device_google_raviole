@@ -318,7 +318,7 @@
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true -->
-    <bool translatable="false" name="skip_restoring_network_selection">true</bool>
+    <bool translatable="false" name="skip_restoring_network_selection">false</bool>
 
     <!-- The behavior when the system detects it has abusive current drains, whether or not to
          move the app to the restricted standby bucket level.

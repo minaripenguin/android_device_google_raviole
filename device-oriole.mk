@@ -37,6 +37,10 @@ $(call inherit-product-if-exists, vendor/google_devices/raviole/proprietary/orio
 $(call inherit-product-if-exists, vendor/google/camera/devices/raviole/oriole/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/raviole/proprietary/WallpapersOriole.mk)
 
+# Use 32-bit libc variant by default
+PRODUCT_USE_SCUDO := true
+PRODUCT_USE_SCUDO_32_BIT := true
+
 DEVICE_PACKAGE_OVERLAYS += device/google/raviole/oriole/overlay
 
 include device/google/raviole/audio/oriole/audio-tables.mk

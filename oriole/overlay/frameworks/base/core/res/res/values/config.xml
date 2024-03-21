@@ -344,4 +344,7 @@
       <item>1769</item> <!-- sensorLocationY -->
       <item>113</item>  <!-- sensorRadius -->
     </integer-array>
+    
+    <bool name="config_dozePulseProximity">true</bool>
+    <bool name="config_deviceHaveWakeUpProximity">true</bool>
 </resources>

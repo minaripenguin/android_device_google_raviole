@@ -29,4 +29,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/oriole/oriole:14/AP1A.240405.002/11480754:user/release-keys
 
-$(call inherit-product, vendor/google/oriole/oriole-vendor.mk)
+$(call inherit-product-if-exists, vendor/google/oriole/oriole-vendor.mk)

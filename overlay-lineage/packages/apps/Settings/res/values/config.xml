@@ -19,4 +19,14 @@
     <bool name="config_show_smooth_display">true</bool>
 
     <bool name="config_show_battery_cycle_count">true</bool>
+    
+    <!-- SettingsGoogle -->
+    <bool name="config_adaptive_alert_vibration_enabled">true</bool>
+    <bool name="config_battery_first_use_date_enabled">true</bool>
+    <bool name="config_connectivity_helper_call_quality_default_value">true</bool>
+    <bool name="config_connectivity_helper_d2d_default_value">true</bool>
+    <bool name="config_show_connectivity_helper_call_quality">true</bool>
+    <bool name="config_show_connectivity_helper_d2d">true</bool>
+    <bool name="config_show_reverse_charging">true</bool>
+    <bool name="config_show_touch_sensitivity">true</bool>
 </resources>

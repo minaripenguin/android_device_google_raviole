@@ -25,6 +25,15 @@ PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Addons
+TARGET_HAS_UDFPS := true
+# Gms 
+WITH_GMS := true
+# Ship Google Camera 
+TARGET_PREBUILT_GOOGLE_CAMERA := true
+# Set Pixel launcher as default launcher
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="oriole-user 15 AP4A.241205.013 12621605 release-keys" \
     BuildFingerprint=google/oriole/oriole:15/AP4A.241205.013/12621605:user/release-keys \
